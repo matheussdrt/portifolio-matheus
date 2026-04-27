@@ -410,10 +410,11 @@
   }
 
   .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
 
   .skill-card {
     background: var(--surface);
@@ -888,7 +889,7 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">Matheus Duarte<span style="color:var(--muted)"></span></div>
+  <div class="nav-logo"><span style="color:var(--muted)"></span></div>
   <ul class="nav-links" id="navLinks">
     <li><a href="#sobre" data-pt="sobre" data-en="about">Sobre</a></li>
     <li><a href="#habilidades" data-pt="skills" data-en="skills">Skills</a></li>
