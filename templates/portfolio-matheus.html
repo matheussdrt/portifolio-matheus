@@ -946,20 +946,63 @@
           <span data-pt="linguagem." data-en="language.">linguagem.</span>
         </h2>
       </div>
+
       <div class="about-text reveal" style="transition-delay:0.1s">
-        <p data-pt="Olá! Sou Matheus Duarte, analista de dados apaixonado por transformar números em narrativas claras e decisões inteligentes."
-           data-en="Hello! I'm Matheus Duarte, a data analyst passionate about transforming numbers into clear narratives and smart decisions.">
-          Olá! Sou <strong>Matheus Duarte</strong>, analista de dados apaixonado por transformar números em narrativas claras e decisões inteligentes.
+
+        <!-- PARÁGRAFO 1 -->
+        <p>
+          <span data-pt="Olá! Sou " data-en="Hello! I'm ">
+            Olá! Sou 
+          </span>
+
+          <strong class="highlight"
+            data-pt="Matheus Duarte"
+            data-en="Matheus Duarte">
+            Matheus Duarte
+          </strong>
+
+          <span data-pt=", analista de dados apaixonado por transformar números em narrativas claras e decisões inteligentes."
+                data-en=", a data analyst passionate about transforming numbers into clear narratives and smart decisions.">
+            , analista de dados apaixonado por transformar números em narrativas claras e decisões inteligentes.
+          </span>
         </p>
 
-        <p data-pt="Com experiência em análise exploratória, modelagem de dados e criação de dashboards interativos, atuo na interseção entre negócio e tecnologia — entregando relatórios precisos e visualizações impactantes."
-           data-en="With experience in exploratory analysis, data modeling, and interactive dashboards, I work at the intersection of business and technology — delivering accurate reports and impactful visualizations.">
-          Com experiência em análise exploratória, modelagem de dados e criação de dashboards interativos, atuo na interseção entre negócio e tecnologia — entregando <strong>relatórios precisos e visualizações impactantes</strong>.
+        <!-- PARÁGRAFO 2 -->
+        <p>
+          <span data-pt="Com experiência em análise exploratória, modelagem de dados e criação de dashboards interativos, atuo na interseção entre negócio e tecnologia — entregando "
+                data-en="With experience in exploratory analysis, data modeling, and interactive dashboards, I work at the intersection of business and technology — delivering ">
+            Com experiência em análise exploratória, modelagem de dados e criação de dashboards interativos, atuo na interseção entre negócio e tecnologia — entregando 
+          </span>
+
+          <strong class="highlight"
+            data-pt="relatórios precisos e visualizações impactantes"
+            data-en="accurate reports and impactful visualizations">
+            relatórios precisos e visualizações impactantes
+          </strong>
+
+          <span data-pt="."
+                data-en=".">
+            .
+          </span>
         </p>
 
-        <p data-pt="Minha abordagem combina rigor técnico com visão estratégica: cada dado conta uma história, e eu me especializo em contar essa história da forma certa, para as pessoas certas, no momento certo."
-           data-en="My approach combines technical rigor with strategic vision: every data point tells a story, and I specialize in telling it the right way, to the right people, at the right time.">
-          Minha abordagem combina rigor técnico com visão estratégica: cada dado conta uma história, e eu me especializo em <strong>contar essa história da forma certa</strong>, para as pessoas certas, no momento certo.
+        <!-- PARÁGRAFO 3 -->
+        <p>
+          <span data-pt="Minha abordagem combina rigor técnico com visão estratégica: cada dado conta uma história, e eu me especializo em contar essa história da forma certa, para as pessoas certas, no momento certo."
+                data-en="My approach combines technical rigor with strategic vision: every data point tells a story, and I specialize in telling it the right way, to the right people, at the right time.">
+            Minha abordagem combina rigor técnico com visão estratégica: cada dado conta uma história, e eu me especializo em 
+          </span>
+
+          <strong class="highlight"
+            data-pt="contar essa história certa da forma certa"
+            data-en="telling that story the right way">
+            contar essa história certa da forma certa
+          </strong>
+
+          <span data-pt=", para as pessoas certas, no momento certo."
+                data-en=", for the right people, at the right time.">
+                , para as pessoas certas, no momento certo.
+          </span>
         </p>
       </div>
     </div>
@@ -976,14 +1019,12 @@
         data-en="↓ Download CV"
         style="display:block; text-align:center; margin-top:1.2rem; max-width:360px; margin-left:auto; margin-right:auto; padding:0.85rem 2rem; background:transparent; color:var(--neon); font-family:'Space Mono',monospace; font-size:0.85rem; font-weight:700; letter-spacing:0.12em; text-decoration:none; border:1px solid #b57aff44; transition:all 0.2s;"
         onmouseover="this.style.background='#b57aff11';this.style.borderColor='#b57aff'"
-        onmouseout="this.style.background='transparent';this.style.borderColor='#b57aff44'"
-        onclick="window.open('Curriculo_Matheus.pdf', '_blank');">
+        onmouseout="this.style.background='transparent';this.style.borderColor='#b57aff44'">
         ↓ Download CV
       </a>
     </div>
   </div>
 </section>
-
 <!-- HABILIDADES -->
 <section id="habilidades">
   <div class="skills-inner">
@@ -1342,6 +1383,9 @@
 
   </div>
 </section>
+<footer>
+  <span>© 2026 <span class="footer-neon">Matheus Duarte</span>&nbsp;— All Rights Reserved.</span>
+</footer>
 
 <script>
 // Lang toggle PT/EN
@@ -1349,26 +1393,26 @@
 let currentLang = 'pt';
 function setLang(lang) {
   currentLang = lang;
+
   document.getElementById('btnPT').classList.toggle('active', lang === 'pt');
   document.getElementById('btnEN').classList.toggle('active', lang === 'en');
-  document.querySelectorAll('[data-pt]').forEach(el => {
-  const text = el.getAttribute('data-' + lang);
-  if (!text) return;
 
-  // INPUT ou TEXTAREA → muda placeholder
-  if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-    el.placeholder = text;
-  } 
-  // OUTROS ELEMENTOS → muda texto normal
-  else {
-    el.textContent = text;
-  }
-});
-  // Navbar links
+  document.querySelectorAll('[data-pt]').forEach(el => {
+    const text = el.getAttribute('data-' + lang);
+    if (!text) return;
+
+    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+      el.placeholder = text;
+    } else {
+      el.textContent = text;
+    }
+  });
+
   const navLabels = {
     pt: ['Sobre', 'Skills', 'Projetos', 'Contato'],
     en: ['About', 'Skills', 'Projects', 'Contact']
   };
+
   document.querySelectorAll('#navLinks a').forEach((a, i) => {
     a.textContent = navLabels[lang][i];
   });
