@@ -77,8 +77,8 @@ O projeto está organizado da seguinte forma:
 
 ## 📬 Contato
 
-- 💼 LinkedIn: (https://www.linkedin.com/in/matheus-duarte-/)
-- 💻 GitHub: (https://github.com/matheussdrt)
+- 💼 LinkedIn: https://www.linkedin.com/in/matheus-duarte-/
+- 💻 GitHub: https://github.com/matheussdrt
 - 📧 Email: matheusduartejp050@gmail.com
 
 ---
