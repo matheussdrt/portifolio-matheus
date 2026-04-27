@@ -38,12 +38,12 @@ O projeto está organizado da seguinte forma:
 
 
 📂 portfolio
-┣ 📂 template
-┃ ┗ 📄 portfolio-matheus.html
-┃ ┗ 📧 Curriculo_Matheus.pdf
-┣ 📂 img
-┃ ┗ 📷 matheus.jpeg
- 📄 README.md
+├── 📂 template
+│ ├── 📄 portfolio-matheus.html
+│ └── 📄 Curriculo_Matheus.pdf
+├── 📂 img
+│ └── 📷 matheus.jpeg
+└── 📄 README.md
 
 
 ---
@@ -77,9 +77,9 @@ O projeto está organizado da seguinte forma:
 
 ## 📬 Contato
 
-- 💼 LinkedIn: https://www.linkedin.com/in/seu-perfil
-- 💻 GitHub: https://github.com/seu-usuario
-- 📧 Email: seuemail@email.com
+- 💼 LinkedIn: (https://www.linkedin.com/in/matheus-duarte-/)
+- 💻 GitHub: (https://github.com/matheussdrt)
+- 📧 Email: matheusduartejp050@gmail.com
 
 ---
 
